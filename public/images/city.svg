@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1100" viewBox="0 0 1000 1100">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e1ebe2"/><stop offset="1" stop-color="#7da6a8"/></linearGradient>
+ <linearGradient id="facade" x2="1" y2="0"><stop stop-color="#d8e2d2"/><stop offset="1" stop-color="#9cb5ad"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#9dbfc0"/><stop offset=".5" stop-color="#71969a"/><stop offset="1" stop-color="#456a79"/></linearGradient>
+ <linearGradient id="dark" x2="0" y2="1"><stop stop-color="#375e69"/><stop offset="1" stop-color="#153e50"/></linearGradient>
+ <pattern id="windows" width="55" height="64" patternUnits="userSpaceOnUse"><rect width="55" height="64" fill="url(#glass)"/><rect x="3" y="3" width="47" height="54" fill="#c2d3c1" opacity=".11"/><path d="M0 0H55M0 0V64" stroke="#e0e9db" stroke-width="5"/><path d="M0 59H55" stroke="#3e646e" stroke-width="3"/></pattern>
+ <pattern id="ribs" width="28" height="40" patternUnits="userSpaceOnUse"><rect width="28" height="40" fill="url(#facade)"/><path d="M2 0V40" stroke="#edf0df" stroke-width="5"/><path d="M11 0V40" stroke="#719299" stroke-width="3"/></pattern>
+ <filter id="texture"><feTurbulence type="fractalNoise" baseFrequency=".5" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="23"/></filter>
+</defs>
+<rect width="1000" height="1100" fill="url(#sky)"/>
+<g fill="#f3f4e6" opacity=".5" filter="url(#soft)"><ellipse cx="600" cy="140" rx="230" ry="65"/><ellipse cx="145" cy="295" rx="170" ry="45"/></g>
+<circle cx="730" cy="177" r="57" fill="#edf0dc" opacity=".7"/>
+<g opacity=".5"><path d="M-80 650 205 490 205 1050H-80Z" fill="#8db0b0"/><path d="M205 490 344 550V1020H205Z" fill="#6f959c"/><path d="M725 520 901 430 901 960H725Z" fill="#bdd0c8"/><path d="M901 430 1050 518V960H901Z" fill="#90b3b0"/></g>
+<path d="M-100 1015 510 748 1140 1005 650 1300Z" fill="#76998f"/>
+<path d="M250 1060 594 860 1100 1069 792 1230Z" fill="#c9d1ba"/>
+<path d="M270 1071 600 890 1000 1057" fill="none" stroke="#f1edda" stroke-width="13"/>
+<g filter="url(#texture)">
+ <path d="M258 287 607 98 607 779 258 983Z" fill="url(#ribs)"/>
+ <path d="M607 98 832 226 832 907 607 779Z" fill="url(#dark)"/>
+ <path d="M258 287 482 408 832 226 607 98Z" fill="#e5e6cc"/>
+ <path d="M482 408 832 226 832 907 482 1102Z" fill="url(#windows)"/>
+ <path d="M258 287 482 408V1102L258 983Z" fill="url(#ribs)"/>
+ <path d="M482 408 832 226" fill="none" stroke="#f4efdb" stroke-width="13"/>
+ <path d="M482 408V1102" stroke="#d1d9c8" stroke-width="12"/>
+ <path d="M295 275 604 110 797 220 484 385Z" fill="#a6bb91"/>
+ <path d="M325 273 605 124 768 220 485 368Z" fill="#728e72"/>
+ <path d="M520 420 798 273V860L520 1012Z" fill="#dee8d7" opacity=".07"/>
+ <path d="M130 600 335 489 335 1033 130 1136Z" fill="#a4bbab"/>
+ <path d="M335 489 459 565V1097L335 1033Z" fill="#5d8186"/>
+ <path d="M130 600 254 668 459 565 335 489Z" fill="#e4e4c9"/>
+ <path d="M254 668 459 565V1097L254 1200Z" fill="url(#windows)"/>
+ <path d="M130 600 254 668V1200L130 1136Z" fill="url(#ribs)"/>
+ <path d="M152 599 335 503 435 565 255 651Z" fill="#6e8e72"/>
+</g>
+<g fill="#426e63"><ellipse cx="170" cy="583" rx="36" ry="29"/><ellipse cx="220" cy="561" rx="30" ry="26"/><ellipse cx="268" cy="537" rx="39" ry="28"/><ellipse cx="320" cy="511" rx="30" ry="23"/><ellipse cx="410" cy="254" rx="45" ry="30"/><ellipse cx="465" cy="225" rx="37" ry="25"/><ellipse cx="529" cy="196" rx="41" ry="29"/><ellipse cx="595" cy="161" rx="30" ry="23"/></g>
+<g><path d="M871 1000V866" stroke="#426157" stroke-width="10"/><ellipse cx="870" cy="841" rx="66" ry="87" fill="#557d63"/><ellipse cx="894" cy="818" rx="40" ry="60" fill="#709174"/><path d="M936 1050V966" stroke="#426157" stroke-width="8"/><ellipse cx="939" cy="932" rx="43" ry="61" fill="#7a9a70"/></g>
+<path d="M0 1000 1000 950V1100H0Z" fill="#153e50" opacity=".3"/>
+<rect width="1000" height="1100" fill="#385867" opacity=".06"/>
+</svg>
