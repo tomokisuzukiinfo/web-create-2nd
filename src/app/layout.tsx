@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { company } from "./company";
 
 export const metadata: Metadata = {
-  title: "株式会社Smile lims | 人と企業の可能性を、あたらしい明日の力に。",
-  description: "株式会社Smile limsの企業紹介サイト。理念・事業・会社概要をご紹介します。社名以外の掲載情報は仮のサンプルです。",
+  title: `${company.name} | ${company.tagline}`,
+  description: `${company.name}は大阪を拠点に、不動産売買・賃貸仲介・パーソナルトレーニングを通じて、あなたらしい毎日に寄り添います。事業紹介・会社概要・お問い合わせをご案内します。`,
   robots: { index: false, follow: false },
 };
 

@@ -1,6 +1,6 @@
 # Smile lims corporate concept
 
-株式会社Smile limsの企業紹介サイトです。社名以外の掲載内容・ニュース・所在地は仮のサンプルです。添付の72秒の参考動画を確認し、全画面写真、大きな英字見出し、白と青のセクション、固定ヘッダー、スクロール表示の方向性を反映しています。参考サイトの写真や文章は使用していません。
+株式会社Smile limsの企業紹介サイトです。会社情報は提供された名刺をもとに、事業内容はユーザー確認済みの「不動産売買・賃貸仲介・パーソナルトレーニング」を反映しています。設立年・資本金など未確認の情報は掲載していません。添付の72秒の参考動画を確認し、全画面写真、大きな英字見出し、白と青のセクション、固定ヘッダー、スクロール表示の方向性を反映しています。参考サイトの写真や文章は使用していません。
 
 ## Development
 
@@ -23,12 +23,13 @@ Static export: `npm run build` generates `out/`. Upload the contents of `out/` t
 
 ## Editing
 
-- Page structure, sample company information, news and services: `src/app/page.tsx`
+- Confirmed company information and contact destinations: `src/app/company.ts`
+- Page structure, brand message and service descriptions: `src/app/page.tsx`
 - Colors, typography, responsive layouts and reduced-motion support: `src/app/globals.css`
-- SEO title, description and demo noindex setting: `src/app/layout.tsx`
-- Hero office and lounge image visuals: `public/images/office.webp`, `public/images/lounge.webp`
+- SEO title, description and in-progress noindex setting: `src/app/layout.tsx`
+- Local AI image visuals and reconstructed infinity mark: `public/images/`
 
-The contact form validates required fields and email format locally, then displays a demo confirmation. It does not send or store submitted data. Connect a real delivery service and replace the fictional data before public launch. Remove the demo labels and noindex only when preparing a real company site.
+Contact links use the phone numbers and email on the supplied business card. Telephone links open the device calling application; email links open the configured mail application. The site has no server-side form or delivery service. News displays a preparation message until real updates are available. Photos are illustrative AI-generated interiors, not photos of the actual office or training studio. The infinity motif is reconstructed from the card; the original logo file can replace it later. The noindex setting remains while the site is being prepared.
 
 Each cloud task is already isolated. Use the existing checkout; do not create a Git worktree unless explicitly requested.
 
@@ -38,4 +39,4 @@ Import `tomokisuzukiinfo/web-create-2nd` in Vercel and select `main`. The commit
 
 ## Standalone review copy
 
-After building, run `node scripts/make-preview.mjs`. This creates `/workspace/scratch/Smile-lims-preview.html`, with embedded styling, illustration and demo controls. Download it and open it in a browser without a development server. It is a review copy; deploy the complete `out/` directory for the actual site. All data except the company name remains provisional.
+After building, run `node scripts/make-preview.mjs`. This creates `/workspace/scratch/Smile-lims-preview.html`, with embedded styling, image visuals and navigation controls. Download it and open it in a browser without a development server. It is a review copy; deploy the complete `out/` directory for the actual site.
